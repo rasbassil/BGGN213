@@ -7,24 +7,99 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## GitHub Documents
 
-This is an R Markdown format used for publishing markdown documents to GitHub. When you click the **Knit** button all R code chunks are run and a markdown file (.md) suitable for publishing to GitHub is generated.
 
-## Including Code
+Download a CSV file from the PDB site
+https://www.rcsb.org/stats/summary
 
-You can include R code in the document as follows:
-
-```{r cars}
-summary(cars)
+```{r}
+PDBdata_dist <- read.csv("Data Export Summary.csv")
 ```
 
-## Including Plots
 
-You can also embed plots, for example:
+Q. Determine the percentage of structures solved by X-Ray and Electron Microscopy
+```{r}
+XRay <- (PDBdata_dist$Total[1])/sum(PDBdata_dist$Total)*100
+XRay
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+EM <- (PDBdata_dist$Total[3])/sum(PDBdata_dist$Total)*100
+EM
+
+#Alternatively,
+ans <- PDBdata_dist$Total/sum(PDBdata_dist$Total) * 100
+names(ans) <- PDBdata_dist$Experimental.Method
+round(ans,2)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Q. What proportion of structures are protein? 
+```{r}
+round( sum(PDBdata_dist$Proteins)/ sum(PDBdata_dist$Total) * 100, 2)
+```
+
+
+
+
+#Working with biomolecular data in R
+
+```{r}
+library(bio3d)
+pdb <- read.pdb("1hsg")
+pdb
+```
+
+```{r}
+pdb$atom
+```
+
+
+```{r}
+pdb$atom[1,"resid"]
+```
+
+```{r}
+aa321( pdb$atom[pdb$calpha, "resid"] )
+```
+
+
+
+Q8.  Use the Bio3D write.pdb() function to write out a protein only PDB file for viewing in VMD. Also write out a second separate PDB file for the ligand with residue name MK1
+
+```{r}
+protein <- atom.select(pdb, "protein", value = TRUE)
+write.pdb(protein, file="1hsg_protein.pdb")
+```
+
+
+Now same for ligand...
+```{r}
+ligand <- atom.select(pdb, "ligand", value = TRUE)
+write.pdb(ligand, file="1hsg_protein.pdb")
+```
+
+```{r}
+#library(bio3d.view)
+#view(ligand)
+#view(pdb, "overview", col="sse")
+```
+
+
+```{r}
+# Load the package
+#pdb <- read.pdb("1hel")
+# Normal mode analysis calculation
+#modes <- nma(pdb)
+#m7 <- mktrj(modes,
+ #mode=7,
+ #file="mode_7.pdb")
+
+#view(m7, col=vec2color( rmsf(m7) ))
+```
+
+
+
+
+
+
+
+
+
