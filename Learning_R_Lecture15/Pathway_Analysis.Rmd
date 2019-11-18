@@ -239,6 +239,27 @@ To view in R Markdown
 
 
 
+```{r}
+1:10*10
+```
+
+
+```{r}
+x <- 1:10
+x[ c(TRUE, FALSE) ]
+```
+
+
+
+```{r}
+X = read.csv("~/GSE37704_metadata.csv")
+```
+
+
+
+
+
+
 
 
 
