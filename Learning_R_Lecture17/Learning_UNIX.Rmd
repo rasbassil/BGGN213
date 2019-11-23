@@ -1,0 +1,71 @@
+---
+title: "UNIX for Bioinformatics"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+## When working in the terminal and using UNIX
+
+pwd = print working directory
+
+ls = list files in the working directory
+
+cd = change directory
+ -- cd .. will move you upwards on file layer
+ -- cd by itself will take you back to your users directory
+
+mkdir = make directory ; makes a new folder in the current working directory you're in 
+
+rm = remove files --> don't ever use lol 
+ -- permanently deletes files and if you type it in wrong it can delete your whole computer
+
+curl = download a link from the internet 
+ -- curl -O https://bioboot.github.io/bggn213_S18/class-material/bggn213_01_unix.zip
+
+less = view a file 
+ -- when viewing a file you can use head and tail to view the first and last sections
+ -- q to quit to exit viewing the file
+ 
+cp = copy a file and rename it 
+ -- cp originalfilename newfilename
+ -- keeps the original file name
+ 
+mv = can move or rename a file
+ -- mv oldfile newfile -> renames the old file name to the new file name
+ -- you can also move the file to somewhere else 
+
+
+man = view the help page for the command (like ?... in R)
+
+nano = text editor
+
+'> overrides a file
+
+'>> appends a file
+
+
+control-c = force quit a process 
+
+| pipe
+
+> redirect output
+
+< redirect input
+
+
+ps = processes ; shows a list of processes you currently have running
+
+top = shows a list of proecesses that are currently running 
+
+apt-get = 
+
+sudo = 
+
+apt-get = 
+
+
