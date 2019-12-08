@@ -3,7 +3,7 @@ Lecture 07 R Functions and Packages
 Reina Bassil
 10/23/2019
 
-## Revisit our functions from last lecutre
+## Revisit our functions from last lecture
 
 ``` r
 source("http://tinyurl.com/rescale-R")
