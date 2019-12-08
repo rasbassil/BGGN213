@@ -14,8 +14,7 @@ Class 8 [K-means clustering, Hierarchical clustering, Heatmaps, Principle Compon
 Class 9 [Principle Component Analysis and Cluster Dendrograms to Analyze High Dimensional Data Sets](https://github.com/rasbassil/BGGN213/blob/master/Learning_R_Lecture09/Learning_R_Lecture09.md)
 
 Class 10 Creating a Github, Pushing Previous Lecture Material
-
-   [Class Lecture Slides](https://bioboot.github.io/bggn213_F19/class-material/lecture-10-bggn213_large.pdf)
+	[Class Lecture Slides](https://bioboot.github.io/bggn213_F19/class-material/lecture-10-bggn213_large.pdf)
 
 Class 11 [Structural Bioinformatics to Visualize Protein Structure](https://github.com/rasbassil/BGGN213/blob/master/Learning_R_Lecture11/Learning_R_Lecture11.md)
 
