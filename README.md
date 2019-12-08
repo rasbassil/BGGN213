@@ -14,15 +14,14 @@ Class 8 [K-means clustering, Hierarchical clustering, Heatmaps, Principle Compon
 Class 9 [Principle Component Analysis and Cluster Dendrograms to Analyze High Dimensional Data Sets](https://github.com/rasbassil/BGGN213/blob/master/Learning_R_Lecture09/Learning_R_Lecture09.md)
 
 Class 10 Creating a Github, Pushing Previous Lecture Material
-	[Class Lecture Slides](https://bioboot.github.io/bggn213_F19/class-material/lecture-10-bggn213_large.pdf)
+- [Class Lecture Slides](https://bioboot.github.io/bggn213_F19/class-material/lecture-10-bggn213_large.pdf)
 
 Class 11 [Structural Bioinformatics to Visualize Protein Structure](https://github.com/rasbassil/BGGN213/blob/master/Learning_R_Lecture11/Learning_R_Lecture11.md)
 
 Class 12 [Bioinformatics in Drug Discovery and Design, Receptor-Based and Ligand-Based Drug Design](https://github.com/rasbassil/BGGN213/blob/master/Learning_R_Lecture12/Class12.md)
 
 Class 13 Genome Informatics and High Throughput Sequencing - no class
-
-   [Class lecture slides](https://bioboot.github.io/bggn213_F19/class-material/lecture-13-bggn213_large.pdf)
+- [Class lecture slides](https://bioboot.github.io/bggn213_F19/class-material/lecture-13-bggn213_large.pdf)
 
 Class 14 [Transcriptomics and Analysis of RNA-Seq Data](https://github.com/rasbassil/BGGN213/blob/master/Learning_R_Lecture14/Learning_R_Lecture14.md)
 
@@ -31,12 +30,11 @@ Class 15 [Genome Annotation and Interpretation of Gene Lists, KEGG and GO Functi
 Class 16 [Biological Network Analysis Using Cytoscape](https://github.com/rasbassil/BGGN213/blob/master/Learning_R_Lecture16/Cytoscape%20Lecture.Rmd)
 
 Class 17 [Learning UNIX for Bioinformatics](https://github.com/rasbassil/BGGN213/blob/master/Learning_R_Lecture17/Learning_UNIX.Rmd)
-   [Class lecture slides](https://bioboot.github.io/bggn213_F19/class-material/lecture17_bggn213-large.pdf)
+- [Class lecture slides](https://bioboot.github.io/bggn213_F19/class-material/lecture17_bggn213-large.pdf)
    
 Class 18 [Cancer Genomics, NCI GDC, Personalized Cancer Vaccine Design](https://github.com/rasbassil/BGGN213/blob/master/Learning_R_Lecture18/Learning_R_Lecture18.Rmd)
-
-   [Class lecture slides](https://bioboot.github.io/bggn213_F19/class-material/lecture-18-bggn213_large.pdf)
-   [Mutant identification and subsequence extraction with R](https://bioboot.github.io/bggn213_F19/class-material/lecture18_part2_example/)
+- [Class lecture slides](https://bioboot.github.io/bggn213_F19/class-material/lecture-18-bggn213_large.pdf)
+- [Mutant identification and subsequence extraction with R](https://bioboot.github.io/bggn213_F19/class-material/lecture18_part2_example/)
     
     
 
