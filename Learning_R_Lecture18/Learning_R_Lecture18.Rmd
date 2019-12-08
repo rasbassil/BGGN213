@@ -1,0 +1,120 @@
+---
+title: "Untitled"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r}
+projects <- getGDCprojects()
+head(projects)
+
+```
+
+
+```{r}
+cases_by_project <- cases() %>%
+  facet("project.project_id") %>%
+  aggregations()
+head(cases_by_project)
+```
+
+
+```{r}
+View(cases_by_project)
+```
+
+
+
+```{r}
+x <- cases_by_project$project.project_id
+
+# Make a custom color vector for our plot
+colvec <- rep("lightblue", nrow(x))
+colvec[___] <- "red"
+
+# Plot with 'log' for y axis and rotate labels with 'las'
+#par(___)  
+barplot(___, names.arg=___, log="y", col=colvec, las=2)
+```
+
+
+
+```{r}
+library(bio3d)
+```
+
+
+
+```{r}
+p53_mut <- read.fasta("lecture18_sequences.fa")
+p53_mut
+```
+
+
+
+```{r}
+p53_mut$ali
+
+which(p53_mut$ali[1,]!=p53_mut$ali[2,])
+```
+
+
+
+```{r}
+ide <- conserv(p53_mut$ali, method="identity")
+mutant.sites <- which(ide < 1) 
+```
+
+```{r}
+gaps <- gap.inspect(p53_mut)
+mutant.sites <- mutant.sites[mutant.sites %in% gaps$f.inds]
+
+mutant.sites
+```
+
+
+
+```{r}
+gaps
+```
+
+
+
+
+
+
+
+
+## Barry solves it for us
+
+```{r}
+id <- conserv(p53_mut, method = "iden")
+pos <- which(id < 1)[1]
+p53_mut$ali[, c((pos-8):(pos+8))]
+
+
+p53_mut$ali[2, c((pos-8):(pos+8))]
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
